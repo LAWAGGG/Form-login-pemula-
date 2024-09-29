@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(94, 94, 239);
+    flex-direction: column;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.kotakkotak {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kotak-masuk {
+    width: 800px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 15px 15px;
+}
+
+.kotak-masuk h1{
+    padding: 10px 0px 3px 30px;
+    font-weight: 700px;
+    font-size: 40px;
+}
+
+.masukan {
+    margin: 10px 30px 40px 30px;
+}
+
+.masukan span{
+    color: rgb(81, 81, 81);
+    padding-bottom: 10px;
+}
+
+.nama, .email, .pass {
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.nama input,
+.email input,
+.pass input {
+    border: none;
+    background-color: rgb(213, 213, 213);
+    padding: 10px 20px 10px 20px;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: outline 0.1s, background-color 0.1s; /* Add multiple properties */
+}
+
+.nama input:hover {
+    outline: 3px solid red;
+    background-color: rgb(255, 230, 230); /* Example background color change */
+}
+
+.email input:hover {
+    outline: 3px solid orange;
+    background-color: rgb(255, 240, 210); /* Example background color change */
+}
+
+.pass input:hover {
+    outline: 3px solid rgb(0, 255, 38);
+    background-color: rgb(230, 255, 230); /* Example background color change */
+}
+
+
+.send {
+    margin: 5px 20px 0px 35px;
+    display: flex;
+}
+
+.kirim button, .tanya button {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(213, 213, 213);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kirim button:hover {
+    background-color: rgb(62, 250, 84);
+}
+
+.tanya button:hover {
+    background-color: rgb(250, 225, 62);
+}
+
+.rapiin {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width:768px){
+    .kotak-masuk {
+        position: absolute;
+        width: 420px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 10px 10px;
+    }
+    .nama input,
+    .email input,
+    .pass input {
+    border: none;
+    background-color: rgb(213, 213, 213);
+    padding: 10px 20px 10px 20px;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: outline 0.1s, background-color 0.1s; /* Add multiple properties */
+    }
+    .kotak-masuk h1{
+        padding: 10px 0px 3px 30px;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    .kirim button, .tanya button {
+        padding: 15px;
+    }
+}
+
+@media (max-width:512px){
+    .kotak-masuk {
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 10px 10px;
+    }
+    .nama input,
+    .email input,
+    .pass input {
+    border: none;
+    background-color: rgb(213, 213, 213);
+    padding: 10px 20px 10px 20px;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: outline 0.1s, background-color 0.1s; /* Add multiple properties */
+    }
+    .kotak-masuk h1{
+        padding: 10px 0px 3px 30px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .kirim button, .tanya button {
+        padding: 15px;
+    }
+}
